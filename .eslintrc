@@ -1,0 +1,60 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "plugins": ["prettier", "@typescript-eslint"],
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+    "@next/next/google-font-display": "off",
+    "@next/next/google-font-preconnect": "off",
+    "@typescript-eslint/ban-ts-comment": "off", // ts 어노테이션 금지여부
+    "@typescript-eslint/ban-types": [
+      "error",
+      {
+        "types": {
+          "{}": false
+        }
+      }
+    ],
+    "@typescript-eslint/explicit-function-return-type": "off", // 함수 리턴 검사
+    "@typescript-eslint/explicit-module-boundary-types": "off", // 함수 자료형 검사
+    "@typescript-eslint/no-duplicate-imports": "warn", // 같은 경로인데 여러번 import
+    "@typescript-eslint/no-empty-function": "warn", // 빈 함수 검사
+    "@typescript-eslint/no-empty-interface": "off", // 빈 인터페이스 검사
+    "@typescript-eslint/no-explicit-any": "off", // any 타입 검사
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        "argsIgnorePattern": "^_",
+        "varsIgnorePattern": "^_",
+        "caughtErrorsIgnorePattern": "^_"
+      }
+    ], // 미사용 변수
+    "array-callback-return": [
+      "warn", // return 이 필요한 array Method에서 return이 없는지 확인
+      {
+        "allowImplicit": false // return 이 필요한 array Method에서 return undefined 를 허용할것인가?
+      }
+    ],
+    "eqeqeq": "warn", // 비교연산자 대신 일치연산자
+    "import/first": "warn",
+    "no-console": "off", // console 객체 유무
+    "no-duplicate-imports": "off", // @typescript-eslint/no-duplicate-imports 로 override
+    "no-multi-assign": "warn", // 변수 할당 체이닝 (let a = b = c = 1;)
+    "no-unneeded-ternary": "warn", // 불필요한 삼항연산자
+    "no-unused-vars": "off", // @typescript-eslint/no-unused-vars 로 override
+    "prefer-const": "warn", // const 선호
+    "prefer-destructuring": "warn", // 객체 비구조화 장려
+    "prettier/prettier": "warn",
+    "react/react-in-jsx-scope": "off",
+    "spaced-comment": [
+      "warn",
+      "always",
+      {
+        "markers": ["/"]
+      }
+    ] // 주석 공백 시작
+  }
+}
