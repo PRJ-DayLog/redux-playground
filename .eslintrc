@@ -1,6 +1,6 @@
 {
   "extends": [
-    "next/core-web-vitals",
+    // "next/core-web-vitals",
     "plugin:@typescript-eslint/recommended",
     "prettier"
   ],
@@ -39,7 +39,7 @@
       }
     ],
     "eqeqeq": "warn", // 비교연산자 대신 일치연산자
-    "import/first": "warn",
+    // "import/first": "warn",
     "no-console": "off", // console 객체 유무
     "no-duplicate-imports": "off", // @typescript-eslint/no-duplicate-imports 로 override
     "no-multi-assign": "warn", // 변수 할당 체이닝 (let a = b = c = 1;)
