@@ -47,7 +47,12 @@
     "no-unused-vars": "off", // @typescript-eslint/no-unused-vars 로 override
     "prefer-const": "warn", // const 선호
     "prefer-destructuring": "warn", // 객체 비구조화 장려
-    "prettier/prettier": "warn",
+    "prettier/prettier": [
+      "warn",
+      {
+        "endOfLine": "auto"
+      }
+    ],
     "react/react-in-jsx-scope": "off",
     "spaced-comment": [
       "warn",
